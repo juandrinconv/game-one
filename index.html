@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game</title>
+    </head>
+    <body>
+        
+        <h1>Piedra, Papel y Tijera</h1>
+
+        <h2>Reglas del juego:</h2>
+
+        <h3>La elección de las siguientes opciones se establecerá de la siguiente manera:</h3>
+
+        <ul>
+            <li>1. Piedra 🥌</li>
+            <li>2. Papel 🧻</li>
+            <li>3. Tijera ✂</li>
+        </ul>
+
+        <img
+        title="Game"
+        height="200"
+        width="390" 
+        src="picture.jpg" alt="Piedra, Papel y Tijera"
+        >
+
+        <br>
+
+        <button onclick="eleccion_pc()">Selección del sistema</button>
+
+        <input type="text" id="caja_eleccion_jugador" placeholder="Escribe aquí tú elección">
+
+        <button onclick="verificar_seleccion_jugador()">Verificar su elección</button>
+
+        <button onclick="war()">¡Guerra!</button>
+
+        <p>Empate: <span id="contador_empate">0</span></p>
+        <p>Victorias: <span id="contador_victoria">0</span></p>
+        <p>Derrotas: <span id="contador_derrota">0</span></p>
+
+        <br>
+
+        <div id="eleccion_pc"></div>
+        <div id="eleccion_jugador"></div>
+
+        <script src='main.js'></script>
+
+    </body>
+</html>

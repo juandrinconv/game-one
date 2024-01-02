@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Program</title>
+    </head>
+
+    <body>
+        <script>
+            do {
+                opcion = parseInt(prompt("Jugador; Seleccione la opción deseada: "))
+                switch(opcion) {
+    
+                    case 1:
+                        alert("Usted ha seleccionado Piedra 🥌")
+                        break
+                    case 2:
+                        alert("Usted ha seleccionado Papel 🧻")
+                        break
+                    case 3:
+                        alert("Usted ha seleccionado Tijera ✂")
+                        break
+                    default:
+                        alert("Opción no válida, elija del 1 al 3")
+                        break
+                }
+            } while (!(opcion >= 1 && opcion <=3))
+
+        </script>
+    </body>   
+</html>
